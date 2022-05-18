@@ -71,7 +71,7 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
 
     <AnimateSharedLayout >
  
-    {product.category=="pizza"?
+    {product.category=="KIDS"?
  
       <Stack
         key={product.id}
