@@ -67,8 +67,11 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
   return (
     <>
 
+    
+
     <AnimateSharedLayout >
  
+    {product.category=="pizza"?
  
       <Stack
         key={product.id}
@@ -113,6 +116,7 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
                           >
               <Image   key="image" src={selectedImage} />
           </Flex> }
+          
               
       </AnimatePresence>
           <Stack justifyContent="space-between" spacing={1} width="100%">
@@ -147,6 +151,8 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
           </Stack>
         </Stack>
       </Stack>
+      :console.log("si")}
+
       {isModalOpen && (
         <CartItemDrawer
           isOpen
@@ -158,6 +164,7 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
           }}
         />
       )}
+      
   
   </AnimateSharedLayout>
 
