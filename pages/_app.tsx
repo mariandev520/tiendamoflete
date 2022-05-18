@@ -101,11 +101,13 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
               </Stack>
             </Stack>
             <Link isExternal href="#">
-              <Button colorScheme="teal" size="xs">
+              <Button colorScheme="purple" size="xs">
                 Ropa Niñ@s
               </Button>
             </Link>
-            <Link href="https://www.mofletes.com.ar/">BABYS</Link>
+            <Link href="https://www.mofletes.com.ar/"> <Button colorScheme="purple" size="xs">
+                Ropa Bebes
+              </Button></Link>
             <Component {...pageProps} />
           </Stack>
           <Skeleton endColor="blue.300" height="40px" startColor="violet">
