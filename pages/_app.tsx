@@ -14,6 +14,10 @@ import {
   Flex,
   Skeleton,
   Button,
+  Badge,
+  HStack,
+  Circle,
+  Square,
 } from "@chakra-ui/react";
 import {AppProps} from "next/app";
 
@@ -100,17 +104,26 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                 </Stack>
               </Stack>
             </Stack>
-            <Link isExternal href="#">
-              <Button colorScheme="purple" size="xs">
-                 Niñ@s
-              </Button>
-            </Link>
-            <Link href="https://www.mofletes.com.ar/">
+            <Badge colorScheme="purple" paddingLeft={3}>
               {" "}
-              <Button colorScheme="purple" size="xs">
-                 Bebes
-              </Button>
-            </Link>
+              Categorias{" "}
+            </Badge>
+            <HStack padding={3}>
+              <Circle color="white" size="60px">
+                <Link isExternal href="#">
+                  <Button colorScheme="purple" size="md">
+                    Niñ@s
+                  </Button>
+                </Link>
+              </Circle>
+              <Square color="white" paddingLeft={8} size="60px">
+                <Link href="https://www.mofletes.com.ar/">
+                  <Button colorScheme="purple" size="md">
+                    Bebes
+                  </Button>
+                </Link>
+              </Square>
+            </HStack>
             <Component {...pageProps} />
           </Stack>
           <Skeleton endColor="blue.300" height="40px" startColor="violet">
