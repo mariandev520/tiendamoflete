@@ -105,9 +105,12 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
                 Ropa Niñ@s
               </Button>
             </Link>
-            <Link href="https://www.mofletes.com.ar/"> <Button colorScheme="purple" size="xs">
+            <Link href="https://www.mofletes.com.ar/">
+              {" "}
+              <Button colorScheme="purple" size="xs">
                 Ropa Bebes
-              </Button></Link>
+              </Button>
+            </Link>
             <Component {...pageProps} />
           </Stack>
           <Skeleton endColor="blue.300" height="40px" startColor="violet">
