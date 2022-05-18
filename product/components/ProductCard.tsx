@@ -67,7 +67,7 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
   return (
     <>
 
-    <AnimateSharedLayout type="crossfade">
+    <AnimateSharedLayout >
  
  
       <Stack
