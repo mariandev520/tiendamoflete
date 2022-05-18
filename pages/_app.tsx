@@ -13,6 +13,7 @@ import {
   Box,
   Flex,
   Skeleton,
+  Button,
 } from "@chakra-ui/react";
 import {AppProps} from "next/app";
 
@@ -100,7 +101,9 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
               </Stack>
             </Stack>
             <Link isExternal href="#">
-              KIDS
+              <Button colorScheme="teal" size="xs">
+                Ropa Niñ@s
+              </Button>
             </Link>
             <Link href="https://www.mofletes.com.ar/">BABYS</Link>
             <Component {...pageProps} />
