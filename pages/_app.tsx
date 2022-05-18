@@ -102,13 +102,13 @@ const App: React.FC<AppProps> = ({Component, pageProps}) => {
             </Stack>
             <Link isExternal href="#">
               <Button colorScheme="purple" size="xs">
-                Ropa Niñ@s
+                 Niñ@s
               </Button>
             </Link>
             <Link href="https://www.mofletes.com.ar/">
               {" "}
               <Button colorScheme="purple" size="xs">
-                Ropa Bebes
+                 Bebes
               </Button>
             </Link>
             <Component {...pageProps} />
